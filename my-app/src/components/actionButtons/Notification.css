@@ -1,0 +1,38 @@
+.notification {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #38a169; /* grün */
+  color: white;
+  padding: 16px 24px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  min-width: 300px;
+  font-family: sans-serif;
+}
+
+.notification-content {
+  position: relative;
+}
+
+.progress-bar {
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  height: 4px;
+  background-color: #c6f6d5; /* heller grün */
+  width: 100%;
+  animation: shrink 3s linear forwards;
+  border-radius: 2px;
+}
+
+@keyframes shrink {
+  from {
+    width: 100%;
+  }
+  to {
+    width: 0%;
+  }
+}
